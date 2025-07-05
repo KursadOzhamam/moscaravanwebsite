@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap');
 @import "tailwindcss";
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
+}
+
+.font-oooh-baby {
+  font-family: 'Oooh Baby', cursive !important;
 }
 
 @theme inline {
@@ -23,4 +28,60 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-up {
+  animation: slideUp 0.3s ease-out forwards;
+}
+
+.title-underline {
+  position: relative;
+  display: inline-block;
+  bottom: 20px;
+}
+
+.title-underline::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 10px;
+  background-color: #FF5C37;
+  transition: all 0.8s ease;
+  transform: translateX(-50%);
+}
+
+.title-underline-active::after {
+  width: 100px;
+}
+
+@keyframes modalFade {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.animate-modal {
+  animation: modalFade 0.3s ease-out forwards;
 }
