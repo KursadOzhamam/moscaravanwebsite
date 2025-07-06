@@ -1,101 +1,126 @@
 # Mös Karavan Website
 
-This is a modern, responsive website for Mös Karavan, built with Next.js 14 and Tailwind CSS.
+Modern ve kullanıcı dostu Mös Karavan web sitesi. Next.js, TypeScript ve Tailwind CSS kullanılarak geliştirilmiştir.
 
-## Features
+## 🚀 Özellikler
 
-- Responsive design that works on all devices
-- Modern UI with smooth animations
-- Interactive components
-- Contact form with validation
-- Image gallery with lightbox
-- Testimonials slider
-- SEO optimized
+- **Responsive Tasarım**: Tüm cihazlarda mükemmel görünüm
+- **Admin Paneli**: İçerik yönetimi için gelişmiş admin arayüzü
+- **Hizmet Modalları**: Detaylı hizmet bilgileri için modal pencereler
+- **İletişim Formu**: Müşteri mesajları için entegre form
+- **Galeri**: Dinamik resim galerisi
+- **Hero Slider**: Ana sayfa için özelleştirilebilir slider
 
-## Tech Stack
+## 🛠️ Teknolojiler
 
-- Next.js 14 (App Router)
-- TypeScript
-- Tailwind CSS
-- React Hooks
-- Responsive Design
+- **Next.js 14** - React framework
+- **TypeScript** - Tip güvenliği
+- **Tailwind CSS** - Styling
+- **Node.js** - Backend
+- **Git** - Versiyon kontrolü
 
-## Getting Started
+## 📦 Kurulum
 
-1. Clone the repository:
+1. **Repository'yi klonlayın:**
 ```bash
-git clone <repository-url>
-cd mos-karavan
+git clone https://github.com/KursadOzhamam/moscaravanwebsite.git
 ```
 
-2. Install dependencies:
+2. **Proje klasörüne gidin:**
+```bash
+cd moscaravanwebsite
+```
+
+3. **Bağımlılıkları yükleyin:**
 ```bash
 npm install
 ```
 
-3. Run the development server:
+4. **Geliştirme sunucusunu başlatın:**
 ```bash
 npm run dev
 ```
 
-4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-## Project Structure
-
+5. **Tarayıcınızda açın:**
 ```
-project-root/
-├── src/
-│   ├── app/
-│   │   ├── layout.tsx
-│   │   └── page.tsx
-│   ├── components/
-│   │   ├── common/
-│   │   │   ├── Navbar.tsx
-│   │   │   └── Footer.tsx
-│   │   └── sections/
-│   │       ├── Hero.tsx
-│   │       ├── About.tsx
-│   │       ├── Services.tsx
-│   │       ├── Gallery.tsx
-│   │       ├── Testimonials.tsx
-│   │       └── ContactForm.tsx
-│   └── styles/
-│       └── globals.css
-├── public/
-│   └── images/
-├── tailwind.config.ts
-└── package.json
+http://localhost:3000
 ```
 
-## Development
+## 🏗️ Proje Yapısı
 
-- The project uses TypeScript for type safety
-- Tailwind CSS for styling
-- Components are organized by feature and common elements
-- All images should be placed in the `public/images` directory
-
-## Building for Production
-
-To create a production build:
-
-```bash
-npm run build
+```
+src/
+├── app/                 # Next.js app router
+│   ├── admin/          # Admin paneli sayfaları
+│   ├── api/            # API rotaları
+│   └── globals.css     # Global stiller
+├── components/         # React bileşenleri
+│   ├── admin/         # Admin bileşenleri
+│   ├── common/        # Ortak bileşenler
+│   ├── modals/        # Modal bileşenleri
+│   └── sections/      # Sayfa bölümleri
+├── config/            # Konfigürasyon dosyaları
+├── lib/               # Yardımcı fonksiyonlar
+└── types/             # TypeScript tip tanımları
 ```
 
-To start the production server:
+## 🔧 Kullanım
 
-```bash
-npm start
-```
+### Ana Sayfa
+- Hero slider ile etkileyici giriş
+- Hizmetler bölümü
+- Hakkımızda bilgileri
+- Galeri görüntüleri
 
-## Contributing
+### Admin Paneli
+- `/admin` - Admin girişi
+- İçerik yönetimi
+- Mesaj yönetimi
+- Resim yükleme
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+### Hizmetler
+- Ekipman Kiralama
+- Mobil Duş
+- Mobil Tuvalet
+- Organizasyon Altyapısı
 
-## License
+## 📱 Responsive Tasarım
 
-This project is licensed under the MIT License.
+Site tüm cihazlarda optimize edilmiştir:
+- 📱 Mobil (320px+)
+- 📱 Tablet (768px+)
+- 💻 Desktop (1024px+)
+- 🖥️ Large Desktop (1440px+)
+
+## 🚀 Deployment
+
+### Vercel (Önerilen)
+1. Vercel hesabı oluşturun
+2. GitHub repository'nizi bağlayın
+3. Otomatik deployment
+
+### Netlify
+1. Netlify hesabı oluşturun
+2. GitHub repository'nizi bağlayın
+3. Build komutunu ayarlayın: `npm run build`
+
+## 🤝 Katkıda Bulunma
+
+1. Repository'yi fork edin
+2. Feature branch oluşturun (`git checkout -b feature/amazing-feature`)
+3. Değişikliklerinizi commit edin (`git commit -m 'Add amazing feature'`)
+4. Branch'inizi push edin (`git push origin feature/amazing-feature`)
+5. Pull Request oluşturun
+
+## 📄 Lisans
+
+Bu proje MIT lisansı altında lisanslanmıştır.
+
+## 📞 İletişim
+
+- **GitHub:** [@KursadOzhamam](https://github.com/KursadOzhamam)
+- **Repository:** https://github.com/KursadOzhamam/moscaravanwebsite
+
+---
+
+⭐ Bu projeyi beğendiyseniz yıldız vermeyi unutmayın!
